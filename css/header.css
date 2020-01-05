@@ -1,0 +1,40 @@
+.ba-header {
+  background-color: #303841; }
+
+.ba-logo {
+  color: #ffc12d;
+  font-weight: 800;
+  font-size: 1.75rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: block; }
+  @media screen and (min-width: 991px) {
+    .ba-logo {
+      margin-bottom: 50px; } }
+
+.ba-menu {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  list-style: none;
+  color: white;
+  padding: 0;
+  margin: 0; }
+  .ba-menu__link {
+    display: block;
+    position: relative;
+    padding: 1rem;
+    color: inherit;
+    font-size: 1.125rem; }
+    .ba-menu__link::after {
+      content: '';
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.25);
+      height: 1px;
+      bottom: 0;
+      left: 2rem;
+      right: 1rem; }
+    .ba-menu__link.active {
+      background-color: #442a9d; }
+    .ba-menu__link:hover, .ba-menu__link:focus {
+      background-color: #5535c5; }
